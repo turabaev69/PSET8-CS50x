@@ -1,0 +1,125 @@
+body{
+    font-family:"Open sans", sans-serif;
+    background-color: #040404;
+    color:#fff;
+    position: relative;
+    background: transparent;
+}
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 top right no-repeat; /* url("../img.jpg")*/
+    left: 0;
+    background-size: cover;
+    right:0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+a:hover{
+    text-decoration:none;
+}
+.container{
+    letter-spacing: 5px;
+    margin-top:50px;
+    margin-left:40px;
+    font-size: 40px;
+}
+h1 {
+   
+    margin-right:8em;
+    margin-top:2em;
+  
+}
+.container h1 a{
+   
+    color:#fff;
+    text-decoration:none;
+}
+
+p{
+    margin-right:40em;
+    margin-top:15em;
+}
+.nav{
+    
+                width: 500px;
+                margin-top:-5em;
+                margin-left:60%;
+                margin-right:5em;
+                transition-duration: 2s;
+                transition-delay: .001s;
+                background:black;
+                text-transform: uppercase;
+
+            }
+            
+.nav:hover {
+                width: 10px;
+                background:#fff;
+            }
+            
+ .nav ul{
+                display:inline-flex;
+                margin:0;
+                padding:0;
+                list-style:none;
+                
+            }
+            
+ .nav ul{
+                display:inline-flex;
+                margin:0;
+                padding:0;
+                list-style:none;
+                
+            }
+.nav Li + li{
+    margin-left:40px;
+}
+.nav a{
+    display:#fff;
+    position:relative;
+                color:#fff;
+                font-family:"Poppins", sans-serif;
+                font-weight:400;
+            }
+            .nav a::before{
+                content:"";
+                position:absolute;
+                width:0;
+                height:2px;
+                bottom:-8px;
+                left:0;
+                background-color:#fff;
+                visibility:hidden;
+                width:0px;
+                transition:all 0.3s ease-in-out 0s;
+            }
+            .nav a:hover::before,
+            .nav li:hover >a::before,
+            .nav .homee > a::before{
+                visibility:visible;
+                width:25px;
+            }
+.nav a:f,
+.nav .homee > a,
+.nav li:hover >a{
+     color:#fff;
+    text-decoration:none
+}
+
+.body {
+                animation:transitionIn 0.75s;
+            }
+            @keyframes transitionIn{
+                from{
+                    opacity:0;
+                    transform:rotateX(-10deg);
+                }
+                to {
+                    opacity:1;
+                    transform:rotateX(0);
+                }
+            }
+

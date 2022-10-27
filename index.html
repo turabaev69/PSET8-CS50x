@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>My portfolio</title>
+
+       <!-- <link href="Users/user/Downloads/IMG_6131.heic" rel="icon"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=New+Tegomin&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+
+
+            #header h2{
+                font-size:24px;
+                margin-top:20px;
+                color:rgba(255,255,255, 0.8);
+            }
+            #header h2 span{
+                color:#fff;
+                border-bottom:2px solid coral;
+                padding-bottom:6px;
+            }
+            #header h2 span:hover{
+                color:coral;
+                border-bottom:2px solid #fff;
+                padding-bottom:6px;
+            }
+            .social .soci{
+                list-style:none;
+                margin-top:40px;
+                display:inline-block;
+                margin-top:-9em;
+
+            }
+            .social li a{
+                width:80px;
+                text-align:center;
+                line-height:100px;
+                display:block;
+                overflow:hidden;
+                border:solid black;
+            }
+
+            .social a{
+                margin:20px;
+                width:10em;
+                font-size:40px;
+                justify-content:center;
+                align-items:center;
+                background:rgba(255,255,255,0.1);
+                color:#fff;
+                line-height:40px;
+                border-radius:50%;
+                width:40%;
+                height:40%;
+
+            }
+            .social a:hover{
+                background-color:black;
+                transform: rotate(360deg);
+                color:white;
+            }
+
+            #header .container{
+                letter-spacing: 5px;
+                margin-top:50px;
+                margin-left:40px;
+                font-size: 40px;
+
+            }
+            .nav{
+                width: 500px;
+                margin-top:5em;
+                margin-left:60%;
+                margin-right:5em;
+                transition-duration: 2s;
+                transition-delay: .001s;
+                background:black;
+                text-transform: uppercase;
+
+            }
+            .nav:hover {
+                width: 10px;
+                background:#fff;
+            }
+
+
+            .nav ul{
+                display:inline-flex;
+                margin:0;
+                padding:0;
+                list-style:none;
+                
+            }
+            .nav Li + li{
+                margin-left:40px;
+            }
+            .nav a{
+                display:#fff;
+                position:relative;
+                color:#fff;
+                font-family:"Poppins", sans-serif;
+                font-weight:400;
+            }
+            .nav a::before{
+                content:"";
+                position:absolute;
+                width:0;
+                height:2px;
+                bottom:-8px;
+                left:0;
+                background-color:#fff;
+                visibility:hidden;
+                width:0px;
+                transition:all 0.3s ease-in-out 0s;
+            }
+            .nav a:hover::before,
+            .nav li:hover >a::before,
+            .nav .homee > a::before{
+                visibility:visible;
+                width:25px;
+            }
+            .nav a:f,
+            .nav .homee > a,
+            .nav li:hover >a{
+                color:#fff;
+                text-decoration:none
+            }
+            .mobile-nav-toggle{
+                position:fixed;
+                right:15px;
+                top:15px;
+                z-index:9998;
+                border:0;
+                background:none;
+                font-size:24px;
+                transition:all 0.4s;
+                outline:none ;
+            }
+
+            /* about me */
+            iabout .contact h3{
+                font-size:26px;
+                font-weight:700;
+                color:coral;
+
+            }
+            iabout .content ul{
+                list-style:none;
+                padding:0;
+            }
+            .body {
+                animation:transitionIn 0.75s;
+            }
+            @keyframes transitionIn{
+                from{
+                    opacity:0;
+                    transform:rotateX(-10deg);
+                }
+                to {
+                    opacity:1;
+                    transform:rotateX(0);
+                }
+            }
+
+
+
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+        <header class="headerr">
+            <div class="nav">
+                <ul>
+                    <li class="homee"> <a href="#header"> Home </a></li>
+                    <li> <a href="about.html"> About </a> </li>
+                    <li> <a href="#resume"> Resume </a> </li>
+                    <li> <a href="#portfolio"> Portfolio </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+
+                </ul>
+            </div>
+        </header>
+
+
+            <div class="container">
+                 <h1> <a href="index.html"> Adam </a> </h1>
+
+            <!-- navigation menu -->
+             </div>
+
+
+
+
+        <!-- social links -->
+            <div class="social">
+                <ul class="soci">
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-github"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                </ul>
+            </div>
+
+        </header>
+    </body>
+</html>
